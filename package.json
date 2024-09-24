@@ -1,8 +1,8 @@
 {
   "name": "vue-of-fortune",
+  "type": "module",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
@@ -10,12 +10,14 @@
     "test:e2e": "playwright test",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "vue": "^3.4.29"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^3.7.1",
     "@playwright/test": "^1.44.1",
     "@rushstack/eslint-patch": "^1.8.0",
     "@tsconfig/node20": "^20.1.4",
@@ -24,6 +26,7 @@
     "@vue/eslint-config-typescript": "^13.0.0",
     "@vue/tsconfig": "^0.5.1",
     "eslint": "^8.57.0",
+    "eslint-plugin-format": "^0.1.2",
     "eslint-plugin-playwright": "^1.6.2",
     "eslint-plugin-vue": "^9.23.0",
     "npm-run-all2": "^6.2.0",
