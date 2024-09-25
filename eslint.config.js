@@ -1,5 +1,13 @@
 import antfu from '@antfu/eslint-config'
+import { FlatCompat } from '@eslint/eslintrc'
 
-export default antfu({
-  formatters: true,
-})
+const compat = new FlatCompat()
+
+export default antfu(
+  {
+    formatters: true,
+  },
+  ...compat.config({
+    extends: ['plugin:tailwindcss/recommended'],
+  }),
+)
