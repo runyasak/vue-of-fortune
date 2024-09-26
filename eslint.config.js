@@ -9,5 +9,8 @@ export default antfu(
   },
   ...compat.config({
     extends: ['plugin:tailwindcss/recommended'],
+    rules: {
+      'tailwindcss/no-custom-classname': 'off',
+    },
   }),
 )
