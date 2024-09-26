@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+body {
+  @apply bg-[#1b1b1f] text-white;
+}
+
+.character-faded {
+  animation:
+    fadeInUp 0.5s,
+    fadeOutUp 0.5s;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
