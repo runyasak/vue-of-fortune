@@ -44,7 +44,7 @@ function clickStart() {
 
 function clickStop() {
   if (!countdownInterval.isActive.value) {
-    const randomAttendee = attendeeList[Math.ceil(Math.random() * attendeeList.length - 1)]
+    const randomAttendee = attendeeList[Math.floor(Math.random() * attendeeList.length)]
 
     winnerAttendee.value = {
       code: randomAttendee.code,
