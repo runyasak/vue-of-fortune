@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: 'https://runyasak.github.io/vue-of-fortune/',
   plugins: [
     vue(),
     vueDevTools(),
