@@ -1,0 +1,10 @@
+[
+  { "code": "ABCD1234", "name": "John Doe" },
+  { "code": "WXYZ5678", "name": "Jane Smith" },
+  { "code": "LMNO9123", "name": "Alice Brown" },
+  { "code": "QRST4567", "name": "Bob Green" },
+  { "code": "UVWX7890", "name": "Charlie Black" },
+  { "code": "EFGH3456", "name": "Diana White" },
+  { "code": "IJKL6789", "name": "Eve Yellow" },
+  { "code": "MNOP0123", "name": "Frank Blue" }
+]
